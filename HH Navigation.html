@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Healing Hearts Navigation Bar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
     <style>
       .navigation {
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 27px;
+        display: flex;
+        align-items: center;
       }
 
-      .navigation ul {
-        overflow: auto;
+      .navbar {
+        text-align: right;
+        flex: 1;
       }
 
-      .navigation li {
-        float: left;
+      .navbar ul {
         list-style: none;
+        padding: 0;
       }
 
-      .navigation a {
-        padding: 4px 4px;
+      .navbar li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      .navbar a {
+        padding: 4px 12px;
         text-decoration: none;
-        margin: 4px 24px;
         font-family: "Ubuntu", sans-serif;
         color: white;
       }
@@ -36,10 +34,7 @@
       #hhpng {
         height: 161px;
         width: 540px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-        margin-left: 29px;
-        margin-right: 329px;
+        margin: 3px 0;
       }
 
       a:hover {
@@ -47,33 +42,30 @@
         background-color: white;
         border-radius: 10px;
       }
-
-
-      
     </style>
   </head>
   <body>
     <header>
       <nav class="navigation">
-        <ul>
-            <li><img src="hyhy.png" alt="Healing Hearts" id="hhpng" /></li>
-            
-              <li>
-                <a href="" id="home"> <strong>Blog</strong> </a>
-              </li>
-              <li>
-                <a href="" id="HH"> <strong>About Healing Hearts</strong></a>
-              </li>
-              <li>
-                <a href="" id="team"> <strong>Our Team</strong></a>
-              </li>
-              <li>
-                <a href="" id="contact"> <strong>Contact</strong> </a>
-              </li>       
-        </ul>
+        <img src="hyhy.png" alt="Healing Hearts" id="hhpng" />
+
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="" id="home"><strong>Blog</strong></a>
+            </li>
+            <li>
+              <a href="" id="HH"><strong>About Healing Hearts</strong></a>
+            </li>
+            <li>
+              <a href="" id="team"><strong>Our Team</strong></a>
+            </li>
+            <li>
+              <a href="" id="contact"><strong>Contact</strong></a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-
-    <dic
   </body>
 </html>
